@@ -17,6 +17,7 @@ let timer;
 btnStart.onclick = e => {
   const duration = Number(meditateMinutes) * 60 * 1000;
   reclaime.height = versaHeight;
+  vibration.start("confirmation-max");
   begin(duration);
   btnStart.style.display = "none";
   btnReset.style.display = "none";
@@ -52,7 +53,7 @@ function finish() {
   btnStart.style.display = "none";
   btnReset.style.display = "inline";
   btnStop.style.display = "none";
-  vibration.start("confirmation-max");
+  vibration.start("nudge-max");
 }
 
 function pourWater(duration, count) {
