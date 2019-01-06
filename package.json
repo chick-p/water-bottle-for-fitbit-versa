@@ -2,7 +2,7 @@
   "fitbit": {
     "appUUID": "0dae2bb0-0155-4af4-9a4a-c13e778acbfb",
     "appType": "app",
-    "appDisplayName": "water-bottle",
+    "appDisplayName": "Water Bottle",
     "iconFile": "resources/icon.png",
     "wipeColor": "#00bcd4",
     "requestedPermissions": [
@@ -13,7 +13,7 @@
     ],
     "i18n": {
       "en": {
-        "name": "water-bottle"
+        "name": "Water Bottle"
       }
     }
   },
