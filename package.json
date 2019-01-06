@@ -5,7 +5,9 @@
     "appDisplayName": "water-bottle",
     "iconFile": "resources/icon.png",
     "wipeColor": "#00bcd4",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "run_background"
+    ],
     "buildTargets": [
       "meson"
     ],

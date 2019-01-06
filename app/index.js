@@ -1,6 +1,7 @@
 import document from "document";
 import * as messaging from "messaging";
 import { vibration } from "haptics";
+import { display } from "display";
 
 const root = document.getElementById("root");
 const btnStart = document.getElementById("btn-start");
@@ -13,6 +14,8 @@ const tickInterval = 100;
 
 let meditateMinutes;
 let timer;
+
+display.autoOff = false;
 
 btnStart.onclick = e => {
   const duration = Number(meditateMinutes) * 60 * 1000;
