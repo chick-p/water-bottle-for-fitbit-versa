@@ -1,6 +1,5 @@
 import * as messaging from "messaging";
 import { settingsStorage } from "settings";
-import * as spreadsheet from "./spreadsheet";
 
 settingsStorage.setItem(
   "meditate",
