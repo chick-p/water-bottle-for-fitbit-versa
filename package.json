@@ -1,8 +1,10 @@
 {
+  "name": "water-bottle",
+  "version": "0.2.0",
   "fitbit": {
     "appUUID": "0dae2bb0-0155-4af4-9a4a-c13e778acbfb",
     "appType": "app",
-    "appDisplayName": "Water Bottle",
+    "appDisplayName": "water-bottle",
     "iconFile": "resources/icon.png",
     "wipeColor": "#00bcd4",
     "requestedPermissions": [
@@ -13,9 +15,10 @@
     ],
     "i18n": {
       "en": {
-        "name": "Water Bottle"
+        "name": "water-bottle"
       }
-    }
+    },
+    "defaultLanguage": "en-US"
   },
   "devDependencies": {
     "@fitbit/sdk": "~3.1.0",
