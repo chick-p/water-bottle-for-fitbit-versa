@@ -19,5 +19,6 @@
   },
   "devDependencies": {
     "@fitbit/sdk": "~2.0.0"
+    "eslint": "^6.2.1"
   }
 }
