@@ -9,7 +9,7 @@ const btnReset = document.getElementById('btn-reset');
 const btnStop = document.getElementById('btn-stop');
 const reclaime = document.getElementById('reclaime');
 
-const versaHeight = root.height;
+const versaHeight = root.height || 300;
 const tickInterval = 100;
 
 let meditateMinutes, timer;
@@ -43,7 +43,7 @@ const pourWater = (duration, count) => {
 display.autoOff = false;
 
 btnStart.onclick = () => {
-  const duration = Number(meditateMinutes) * 60 * 1000;
+  const duration = meditateMinutes * 60 * 1000;
   reclaime.height = versaHeight;
   vibration.start('confirmation-max');
   begin(duration);
@@ -66,7 +66,7 @@ btnReset.onclick = () => {
 messaging.peerSocket.onmessage = (evt) => {
   if (evt.data.key === 'meditate' && evt.data.newValue) {
     const meditate = JSON.parse(evt.data.newValue);
-    meditateMinutes = meditate['values'][0]['value'];
+    meditateMinutes = meditate['values'][0]['value'] || 5;
   }
 };
 
